@@ -85,7 +85,7 @@ p {
 }
 
 .nav-link:hover {
-  color: #3a1f5d;
+  color: #332f27;
   transform: translateY(-2px);
 }
 
@@ -225,15 +225,122 @@ p {
   padding: 3% 2%;
 }
 
-.price-button {
-  font-family: "Montserrat";
-  color: #212529;
-  border-color: #212529;
+.card {
+  transition: transform 0.4s;
+  box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.3);
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &-header {
+    height: 14rem;
+    background-size: cover;
+    position: relative;
+    border-bottom: none;
+    z-index: 1;
+
+    &__chihuahua {
+      background-image: url(./images/chihuahua.jpg);
+    }
+    &__labrador {
+      background-image: url(./images/labrador.jpg);
+    }
+    &__mastiff {
+      background-image: url(./images/mastiff.jpg);
+    }
+
+    .section-header {
+      color: white;
+      background-color: rgba(#ff4d69, 1);
+      padding: 0.6rem 1rem;
+      position: absolute;
+      font-size: 1rem;
+      bottom: 0;
+      right: 0;
+      border-radius: 5%;
+      margin-bottom: -1rem;
+    }
+
+    /*    Recommended (optional) 
+    &__recommended {
+      color: white;
+      background-image: linear-gradient(to right, #ec6f64, #3a1f5d);
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding: 0.2rem 5rem;
+      position: absolute;
+      top: 0;
+      right: 50%;
+      transform: translateX(50%);
+      background-size: cover;
+    }
+    */
+  }
 }
 
-.price-button:hover {
-  background-color: #ff4c68;
-  border-color: #fff;
+.title-header__card {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.a-container {
+  margin: 1rem auto;
+  transition: all 0.3s;
+  &:hover {
+    transform: translateY(-3px);
+  }
+  &:active {
+    transform: translateY(-1px);
+  }
+}
+
+.price-button,
+.price-button:link,
+.price-button:visited {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #ff4d69, #ec6f64);
+  padding: 0.8rem 5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  }
+  &:active {
+    box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.3);
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.price-item {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.price-icon-check {
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  color: #5c8c3e;
+}
+.price-icon-cross {
+  position: absolute;
+  right: 0.23rem;
+  font-size: 1rem;
+  color: #ff4c68;
 }
 
 /* Call to action section */

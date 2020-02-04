@@ -1,4 +1,5 @@
 import React from "react";
+import AnkerButton from "./AnkerButton";
 
 function Pricing() {
   return (
@@ -10,63 +11,111 @@ function Pricing() {
         <div className="row">
           <div className="pricing-card col-lg-4 col-md-6">
             <div className="card">
-              <div className="card-header">
+              <div className="card-header card-header__chihuahua">
                 <h3 className="section-header">Chihuahua</h3>
               </div>
               <div className="card-body">
-                <h2 className="title-header">Free</h2>
-                <p>5 Matches Per Day</p>
-                <p>10 Messages Per Day</p>
-                <p>Unlimited App Usage</p>
-                <p>&nbsp;</p>
-                <a
-                  href="#"
-                  className="btn btn-outline-dark btn-large btn-block price-button"
-                >
-                  Sign Up
-                </a>
+                <h2 className="title-header__card">Free</h2>
+                <div className="item">
+                  <p className="price-item">
+                    Pirority Listing{" "}
+                    <i class="fas fa-times price-icon-cross"></i>
+                  </p>
+                </div>
+                <div className="item">
+                  <p className="price-item">
+                    Unlimited Matches{" "}
+                    <i class="fas fa-times price-icon-cross"></i>
+                  </p>
+                </div>
+                <div className="item">
+                  <p className="price-item">
+                    Unlimited Messages{" "}
+                    <i class="fas fa-check price-icon-check"></i>
+                  </p>
+                </div>
+                <div className="item">
+                  <p className="price-item">
+                    Unlimited App Usage{" "}
+                    <i class="fas fa-check price-icon-check"></i>
+                  </p>
+                </div>
+                <p className="price-item">&nbsp;</p>
+                <AnkerButton content="Sign Up" href="#" />
               </div>
             </div>
           </div>
 
           <div className="pricing-card col-lg-4 col-md-6">
             <div className="card">
-              <div className="card-header">
+              <div className="card-header card-header__labrador">
                 <h3 className="section-header">Labrador</h3>
               </div>
               <div className="card-body">
-                <h2 className="title-header">$49 / mo</h2>
-                <p>Unlimited Matches</p>
-                <p>Unlimited Messages</p>
-                <p>Unlimited App Usage</p>
+                <h2 className="title-header__card">$49 / mo</h2>
+                <div className="item">
+                  <p className="price-item">
+                    Pirority Listing{" "}
+                    <i class="fas fa-times price-icon-cross"></i>
+                  </p>
+                </div>
+                <div className="item">
+                  <p className="price-item">
+                    Unlimited Matches{" "}
+                    <i class="fas fa-check price-icon-check"></i>
+                  </p>
+                </div>
+                <div className="item">
+                  <p className="price-item">
+                    Unlimited Messages{" "}
+                    <i class="fas fa-check price-icon-check"></i>
+                  </p>
+                </div>
+                <div className="item">
+                  <p className="price-item">
+                    Unlimited App Usage{" "}
+                    <i class="fas fa-check price-icon-check"></i>
+                  </p>
+                </div>
                 <p>&nbsp;</p>
-                <a
-                  href="#"
-                  className="btn btn-outline-dark btn-large btn-block price-button"
-                >
-                  Sign Up
-                </a>
+                <AnkerButton content="Sign Up" href="#" />
               </div>
             </div>
           </div>
 
           <div className="pricing-card col-lg-4">
             <div className="card">
-              <div className="card-header">
+              <div className="card-header card-header__mastiff">
                 <h3 className="section-header">Mastiff</h3>
               </div>
               <div className="card-body">
-                <h2 className="title-header">$99 / mo</h2>
-                <p>Pirority Listing</p>
-                <p>Unlimited Matches</p>
-                <p>Unlimited Messages</p>
-                <p>Unlimited App Usage</p>
-                <a
-                  href="#"
-                  className="btn btn-outline-dark btn-large btn-block price-button"
-                >
-                  Sign Up
-                </a>
+                <h2 className="title-header__card">$99 / mo</h2>
+                <div className="item">
+                  <p className="price-item">
+                    Pirority Listing{" "}
+                    <i class="fas fa-check price-icon-check"></i>
+                  </p>
+                </div>
+                <div className="item">
+                  <p className="price-item">
+                    Unlimited Matches{" "}
+                    <i class="fas fa-check price-icon-check"></i>
+                  </p>
+                </div>
+                <div className="item">
+                  <p className="price-item">
+                    Unlimited Messages{" "}
+                    <i class="fas fa-check price-icon-check"></i>
+                  </p>
+                </div>
+                <div className="item">
+                  <p className="price-item">
+                    Unlimited App Usage{" "}
+                    <i class="fas fa-check price-icon-check"></i>
+                  </p>
+                </div>
+                <p>&nbsp;</p>
+                <AnkerButton content="Sign Up" href="#" />
               </div>
             </div>
           </div>

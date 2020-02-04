@@ -5,11 +5,15 @@ function Pricing() {
   return (
     <section id="pricing">
       <div className="container-fluid">
-        <h2 className="title-header">A Plan for Every Dog's Needs</h2>
-        <p>Simple and affordable price plans for your and your dog.</p>
+        <h2 className="title-header title-header__pricing">
+          A Plan for Every Dog's Needs
+        </h2>
+        <p className="title-header__paragraph">
+          Simple and affordable price plans for your and your dog.
+        </p>
 
         <div className="row">
-          <div className="pricing-card col-lg-4 col-md-6">
+          <div className="pricing-card col-lg-4">
             <div className="card">
               <div className="card-header card-header__chihuahua">
                 <h3 className="section-header">Chihuahua</h3>
@@ -46,7 +50,7 @@ function Pricing() {
             </div>
           </div>
 
-          <div className="pricing-card col-lg-4 col-md-6">
+          <div className="pricing-card col-lg-4">
             <div className="card">
               <div className="card-header card-header__labrador">
                 <h3 className="section-header">Labrador</h3>

@@ -1,3 +1,4 @@
+/* Media Mixins */
 /* HTML */
 * {
   scroll-behavior: smooth; }
@@ -19,14 +20,41 @@ p {
   color: #8f8f8f; }
 
 /* Headers */
+@media only screen and (max-width: 25.875em) {
+  .navbar-brand {
+    font-size: 1.8rem !important; } }
+
 .section-header {
   font-size: 1.5rem;
   font-weight: 800;
   color: #202528; }
+  @media only screen and (max-width: 25.875em) {
+    .section-header {
+      font-size: 1rem; } }
 
 .title-header {
   font-size: 3.5rem;
   line-height: 1.5; }
+  @media only screen and (max-width: 80em) {
+    .title-header {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .title-header {
+      font-size: 2.25rem; } }
+  @media only screen and (max-width: 25.875em) {
+    .title-header {
+      font-size: 2rem;
+      margin-top: -1rem; } }
+  @media only screen and (max-width: 21.25em) {
+    .title-header {
+      font-size: 1.7rem;
+      margin-top: -1.75; } }
+  @media only screen and (min-width: 112.5em) {
+    .title-header {
+      font-size: 4rem; } }
+  @media only screen and (min-width: 150em) {
+    .title-header {
+      font-size: 5rem; } }
 
 /* Container*/
 .container-fluid {
@@ -68,6 +96,12 @@ p {
   font-size: 1.2rem;
   color: #fff;
   transition: all 0.3s; }
+  @media only screen and (min-width: 112.5em) {
+    .nav-link {
+      font-size: 1.525rem; } }
+  @media only screen and (min-width: 150em) {
+    .nav-link {
+      font-size: 2rem; } }
 
 .nav-link:hover {
   color: #332f27;
@@ -86,6 +120,13 @@ p {
   transform: rotate(25deg);
   position: absolute;
   right: 30%; }
+  @media only screen and (max-width: 61.9375em) {
+    .iphone-image {
+      display: none; } }
+  @media only screen and (min-width: 112.5em) {
+    .iphone-image {
+      width: 35%;
+      right: 45%; } }
 
 /* Title Text */
 .title-details {
@@ -109,6 +150,27 @@ p {
   border: none;
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s; }
+  @media only screen and (max-width: 80em) {
+    .button-secondary,
+    .button-secondary:link,
+    .button-secondary:visited {
+      font-size: 1rem; } }
+  @media only screen and (max-width: 25.875em) {
+    .button-secondary,
+    .button-secondary:link,
+    .button-secondary:visited {
+      padding: 0.5rem 0.8rem;
+      font-size: 0.8rem; } }
+  @media only screen and (max-width: 21.25em) {
+    .button-secondary,
+    .button-secondary:link,
+    .button-secondary:visited {
+      font-size: 0.7rem; } }
+  @media only screen and (min-width: 150em) {
+    .button-secondary,
+    .button-secondary:link,
+    .button-secondary:visited {
+      font-size: 2rem; } }
   .button-secondary:hover,
   .button-secondary:link:hover,
   .button-secondary:visited:hover {
@@ -143,6 +205,27 @@ p {
   margin-top: 20px;
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s; }
+  @media only screen and (max-width: 80em) {
+    .button-outline-secondary,
+    .button-outline-secondary:link,
+    .button-outline-secondary:visited {
+      font-size: 1rem; } }
+  @media only screen and (max-width: 25.875em) {
+    .button-outline-secondary,
+    .button-outline-secondary:link,
+    .button-outline-secondary:visited {
+      padding: 0.5rem 0.8rem;
+      font-size: 0.8rem; } }
+  @media only screen and (max-width: 21.25em) {
+    .button-outline-secondary,
+    .button-outline-secondary:link,
+    .button-outline-secondary:visited {
+      font-size: 0.7rem; } }
+  @media only screen and (min-width: 150em) {
+    .button-outline-secondary,
+    .button-outline-secondary:link,
+    .button-outline-secondary:visited {
+      font-size: 2rem; } }
   .button-outline-secondary:hover,
   .button-outline-secondary:link:hover,
   .button-outline-secondary:visited:hover {
@@ -166,16 +249,36 @@ p {
   z-index: 1;
   /* en este caso no hace falta que el z-index este, pero le da mas claridad al codigo */
   position: relative; }
+  @media only screen and (min-width: 112.5em) {
+    #features {
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 150em) {
+    #features {
+      font-size: 2rem; } }
 
 .features-margin {
   margin-bottom: 1rem; }
 
+@media only screen and (max-width: 21.25em) {
+  .features-text {
+    font-size: 0.8rem; } }
+
 .col-lg-4 {
   padding: 4rem; }
+  @media only screen and (max-width: 61.9375em) {
+    .col-lg-4 {
+      padding-bottom: 0rem;
+      padding-top: 3rem; } }
+  @media only screen and (max-width: 21.25em) {
+    .col-lg-4 {
+      padding-top: 2rem; } }
 
 .ft-icon {
   color: #ef8172;
   transition: all 0.3s; }
+  @media only screen and (max-width: 21.25em) {
+    .ft-icon {
+      font-size: 4rem; } }
 
 .ft-icon:hover {
   color: #ff4c68;
@@ -188,10 +291,22 @@ p {
 
 #testimonials .container-fluid {
   padding: 7% 15% 5%; }
+  @media only screen and (max-width: 37.5em) {
+    #testimonials .container-fluid {
+      padding: 20% 15% 10%; } }
 
 .testimonial-text {
   font-size: 3.5rem;
   line-height: 1.5; }
+  @media only screen and (max-width: 80em) {
+    .testimonial-text {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .testimonial-text {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 21.25em) {
+    .testimonial-text {
+      font-size: 1.25rem; } }
 
 .testimonial-image {
   width: 10%;
@@ -208,10 +323,33 @@ p {
   width: 25%;
   margin-left: 30px;
   margin-right: 30px; }
+  @media only screen and (max-width: 80em) {
+    .press-images {
+      margin-left: 15px;
+      margin-right: 15px; } }
+  @media only screen and (max-width: 37.5em) {
+    .press-images {
+      margin-left: 10px;
+      margin-right: 10px; } }
+  @media only screen and (max-width: 25.875em) {
+    .press-images {
+      margin-left: 8px;
+      margin-right: 8px; } }
 
 /* Pricing section */
 .pricing-card {
   padding: 3% 2%; }
+
+@media only screen and (max-width: 37.5em) {
+  .title-header__pricing {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: 1rem;
+    margin-bottom: 1rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .title-header__paragraph {
+    font-size: 0.8rem; } }
 
 .card {
   transition: transform 0.4s;
@@ -224,6 +362,33 @@ p {
     position: relative;
     border: none;
     z-index: 1; }
+    @media only screen and (max-width: 80em) {
+      .card-header {
+        height: 10rem; } }
+    @media only screen and (max-width: 61.9375em) {
+      .card-header {
+        height: 28rem; } }
+    @media only screen and (max-width: 46.0625em) {
+      .card-header {
+        height: 22rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .card-header {
+        height: 18rem; } }
+    @media only screen and (max-width: 30em) {
+      .card-header {
+        height: 14rem; } }
+    @media only screen and (max-width: 25.875em) {
+      .card-header {
+        height: 12rem; } }
+    @media only screen and (max-width: 21.25em) {
+      .card-header {
+        height: 10rem; } }
+    @media only screen and (min-width: 112.5em) {
+      .card-header {
+        height: 20rem; } }
+    @media only screen and (min-width: 150em) {
+      .card-header {
+        height: 24rem; } }
     .card-header__chihuahua {
       background-image: url(./images/chihuahua.jpg); }
     .card-header__labrador {
@@ -240,6 +405,15 @@ p {
       right: 0;
       border-radius: 5%;
       margin-bottom: -1rem; }
+      @media only screen and (max-width: 80em) {
+        .card-header .section-header {
+          font-size: 0.65rem; } }
+      @media only screen and (max-width: 61.9375em) {
+        .card-header .section-header {
+          font-size: 1rem; } }
+      @media only screen and (max-width: 25.875em) {
+        .card-header .section-header {
+          font-size: 0.8rem; } }
       .card-header .section-header__recommended {
         color: white;
         background-image: linear-gradient(to right, transparent, #ff4d69, #3a1f5d, transparent);
@@ -264,6 +438,12 @@ p {
   font-size: 2.25rem;
   text-transform: uppercase;
   margin: 1rem; }
+  @media only screen and (max-width: 80em) {
+    .title-header__card {
+      font-size: 1.75rem; } }
+  @media only screen and (max-width: 61.9375em) {
+    .title-header__card {
+      font-size: 2.25rem; } }
 
 .a-container {
   margin: 1rem auto;
@@ -285,6 +465,21 @@ p {
   border-radius: 0.5rem;
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
   transition: all 0.3s; }
+  @media only screen and (max-width: 80em) {
+    .price-button,
+    .price-button:link,
+    .price-button:visited {
+      padding: 0.8rem 3rem; } }
+  @media only screen and (max-width: 61.9375em) {
+    .price-button,
+    .price-button:link,
+    .price-button:visited {
+      padding: 0.8rem 6rem; } }
+  @media only screen and (max-width: 30em) {
+    .price-button,
+    .price-button:link,
+    .price-button:visited {
+      padding: 0.8rem 4rem; } }
   .price-button:hover,
   .price-button:link:hover,
   .price-button:visited:hover {
@@ -304,6 +499,15 @@ p {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 80em) {
+    .price-item {
+      font-size: 0.7rem; } }
+  @media only screen and (max-width: 61.9375em) {
+    .price-item {
+      font-size: 1rem; } }
+  @media only screen and (max-width: 21.25em) {
+    .price-item {
+      font-size: 0.8rem; } }
 
 .price-icon-check {
   position: absolute;
@@ -327,6 +531,24 @@ p {
   font-weight: 900;
   line-height: 1.5;
   color: #fff; }
+  @media only screen and (max-width: 80em) {
+    .call-to-action-header {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 61.9375em) {
+    .call-to-action-header {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .call-to-action-header {
+      font-size: 1.9rem; } }
+  @media only screen and (max-width: 25.875em) {
+    .call-to-action-header {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 21.25em) {
+    .call-to-action-header {
+      font-size: 1.25rem; } }
+  @media only screen and (min-width: 150em) {
+    .call-to-action-header {
+      font-size: 4rem; } }
 
 .download-button-gplay {
   background-color: #fff;
@@ -347,6 +569,18 @@ p {
   color: #ff4c68;
   transition: all 0.3s;
   text-decoration: none; }
+  @media only screen and (max-width: 25.875em) {
+    .footer-icon,
+    .footer-icon:visited,
+    .footer-icon:link {
+      font-size: 1.5rem;
+      margin-bottom: 2rem; } }
+  @media only screen and (min-width: 150em) {
+    .footer-icon,
+    .footer-icon:visited,
+    .footer-icon:link {
+      font-size: 3rem;
+      margin: 20px 20px 3rem; } }
 
 .footer-icon:hover {
   color: #e36869;

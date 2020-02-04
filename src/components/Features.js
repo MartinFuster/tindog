@@ -8,14 +8,14 @@ function Features() {
           <div className="col-lg-4">
             <i className="fas fa-check-circle fa-5x features-margin ft-icon"></i>
             <h3 className="features-margin section-header">Easy to use.</h3>
-            <p className="features-margin">
+            <p className="features-margin features-text">
               So easy to use, even your dog could do it.
             </p>
           </div>
           <div className="col-lg-4">
             <i className="fas fa-bullseye fa-5x features-margin ft-icon"></i>
             <h3 className="features-margin section-header">Elite Clientele</h3>
-            <p className="features-marginft">
+            <p className="features-margin features-text">
               We have all the dogs, the greatest dogs.
             </p>
           </div>
@@ -24,7 +24,7 @@ function Features() {
             <h3 className="features-margin section-header">
               Guaranteed to work.
             </h3>
-            <p className="features-margin">
+            <p className="features-margin features-text">
               Find the love of your dog's life or your money back.
             </p>
           </div>

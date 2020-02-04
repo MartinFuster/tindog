@@ -1,3 +1,69 @@
+/* Media Mixins */
+@mixin media($breakpoint) {
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 80em) {
+      @content;
+      // 1280px
+    }
+  }
+
+  @if $breakpoint == tab {
+    @media only screen and (max-width: 61.9375em) {
+      @content;
+      // 991px
+    }
+  }
+
+  @if $breakpoint == tab-small {
+    @media only screen and (max-width: 46.0625em) {
+      @content;
+      // 737px
+    }
+  }
+
+  @if $breakpoint == phone-big {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+      // 600px
+    }
+  }
+
+  @if $breakpoint == phone-big-2 {
+    @media only screen and (max-width: 30em) {
+      @content;
+      // 480px
+    }
+  }
+
+  @if $breakpoint == phone-medium {
+    @media only screen and (max-width: 25.875em) {
+      @content;
+      // 414px
+    }
+  }
+
+  @if $breakpoint == phone-small {
+    @media only screen and (max-width: 21.25em) {
+      @content;
+      // 340px
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+      // 1800px
+    }
+  }
+
+  @if $breakpoint == big-desktop-4k {
+    @media only screen and (min-width: 150em) {
+      @content;
+      // 2400px
+    }
+  }
+}
+
 /* HTML */
 * {
   scroll-behavior: smooth;
@@ -23,15 +89,51 @@ p {
 
 /* Headers */
 
+.navbar-brand {
+  @include media(phone-medium) {
+    font-size: 1.8rem !important;
+  }
+}
+
 .section-header {
   font-size: 1.5rem;
   font-weight: 800;
   color: #202528;
+
+  @include media(phone-medium) {
+    font-size: 1rem;
+  }
 }
 
 .title-header {
   font-size: 3.5rem;
   line-height: 1.5;
+
+  @include media(tab-port) {
+    font-size: 2.5rem;
+  }
+
+  @include media(phone-big) {
+    font-size: 2.25rem;
+  }
+
+  @include media(phone-medium) {
+    font-size: 2rem;
+    margin-top: -1rem;
+  }
+
+  @include media(phone-small) {
+    font-size: 1.7rem;
+    margin-top: -1.75;
+  }
+
+  @include media(big-desktop) {
+    font-size: 4rem;
+  }
+
+  @include media(big-desktop-4k) {
+    font-size: 5rem;
+  }
 }
 
 /* Container*/
@@ -86,6 +188,14 @@ p {
   font-size: 1.2rem;
   color: #fff;
   transition: all 0.3s;
+
+  @include media(big-desktop) {
+    font-size: 1.525rem;
+  }
+
+  @include media(big-desktop-4k) {
+    font-size: 2rem;
+  }
 }
 
 .nav-link:hover {
@@ -109,6 +219,15 @@ p {
   transform: rotate(25deg);
   position: absolute;
   right: 30%;
+
+  @include media(tab) {
+    display: none;
+  }
+
+  @include media(big-desktop) {
+    width: 35%;
+    right: 45%;
+  }
 }
 
 /* Title Text */
@@ -136,6 +255,23 @@ p {
   border: none;
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
+
+  @include media(tab-port) {
+    font-size: 1rem;
+  }
+
+  @include media(phone-medium) {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  @include media(phone-small) {
+    font-size: 0.7rem;
+  }
+
+  @include media(big-desktop-4k) {
+    font-size: 2rem;
+  }
 
   &:hover {
     background-color: #212529;
@@ -170,6 +306,22 @@ p {
   border-radius: 0.5rem;
   margin-top: 20px;
 
+  @include media(tab-port) {
+    font-size: 1rem;
+  }
+
+  @include media(phone-medium) {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  @include media(phone-small) {
+    font-size: 0.7rem;
+  }
+
+  @include media(big-desktop-4k) {
+    font-size: 2rem;
+  }
+
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
 
@@ -198,19 +350,46 @@ p {
   z-index: 1;
   /* en este caso no hace falta que el z-index este, pero le da mas claridad al codigo */
   position: relative;
+
+  @include media(big-desktop) {
+    font-size: 1.5rem;
+  }
+
+  @include media(big-desktop-4k) {
+    font-size: 2rem;
+  }
 }
 
 .features-margin {
   margin-bottom: 1rem;
 }
 
+.features-text {
+  @include media(phone-small) {
+    font-size: 0.8rem;
+  }
+}
+
 .col-lg-4 {
   padding: 4rem;
+
+  @include media(tab) {
+    padding-bottom: 0rem;
+    padding-top: 3rem;
+  }
+
+  @include media(phone-small) {
+    padding-top: 2rem;
+  }
 }
 
 .ft-icon {
   color: #ef8172;
   transition: all 0.3s;
+
+  @include media(phone-small) {
+    font-size: 4rem;
+  }
 }
 
 .ft-icon:hover {
@@ -226,11 +405,26 @@ p {
 
 #testimonials .container-fluid {
   padding: 7% 15% 5%;
+  @include media(phone-big) {
+    padding: 20% 15% 10%;
+  }
 }
 
 .testimonial-text {
   font-size: 3.5rem;
   line-height: 1.5;
+
+  @include media(tab-port) {
+    font-size: 2rem;
+  }
+
+  @include media(phone-big) {
+    font-size: 1.5rem;
+  }
+
+  @include media(phone-small) {
+    font-size: 1.25rem;
+  }
 }
 
 .testimonial-image {
@@ -250,12 +444,42 @@ p {
   width: 25%;
   margin-left: 30px;
   margin-right: 30px;
+
+  @include media(tab-port) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  @include media(phone-big) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @include media(phone-medium) {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }
 
 /* Pricing section */
 
 .pricing-card {
   padding: 3% 2%;
+}
+
+.title-header__pricing {
+  @include media(phone-big) {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.title-header__paragraph {
+  @include media(phone-big) {
+    font-size: 0.8rem;
+  }
 }
 
 .card {
@@ -271,6 +495,42 @@ p {
     position: relative;
     border: none;
     z-index: 1;
+
+    @include media(tab-port) {
+      height: 10rem;
+    }
+
+    @include media(tab) {
+      height: 28rem;
+    }
+
+    @include media(tab-small) {
+      height: 22rem;
+    }
+
+    @include media(phone-big) {
+      height: 18rem;
+    }
+
+    @include media(phone-big-2) {
+      height: 14rem;
+    }
+
+    @include media(phone-medium) {
+      height: 12rem;
+    }
+
+    @include media(phone-small) {
+      height: 10rem;
+    }
+
+    @include media(big-desktop) {
+      height: 20rem;
+    }
+
+    @include media(big-desktop-4k) {
+      height: 24rem;
+    }
 
     &__chihuahua {
       background-image: url(./images/chihuahua.jpg);
@@ -292,6 +552,18 @@ p {
       right: 0;
       border-radius: 5%;
       margin-bottom: -1rem;
+
+      @include media(tab-port) {
+        font-size: 0.65rem;
+      }
+
+      @include media(tab) {
+        font-size: 1rem;
+      }
+
+      @include media(phone-medium) {
+        font-size: 0.8rem;
+      }
 
       &__recommended {
         color: white;
@@ -329,6 +601,14 @@ p {
   font-size: 2.25rem;
   text-transform: uppercase;
   margin: 1rem;
+
+  @include media(tab-port) {
+    font-size: 1.75rem;
+  }
+
+  @include media(tab) {
+    font-size: 2.25rem;
+  }
 }
 
 .a-container {
@@ -355,6 +635,18 @@ p {
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
   transition: all 0.3s;
 
+  @include media(tab-port) {
+    padding: 0.8rem 3rem;
+  }
+
+  @include media(tab) {
+    padding: 0.8rem 6rem;
+  }
+
+  @include media(phone-big-2) {
+    padding: 0.8rem 4rem;
+  }
+
   &:hover {
     box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
   }
@@ -375,6 +667,17 @@ p {
 
   align-items: center;
   justify-content: center;
+  @include media(tab-port) {
+    font-size: 0.7rem;
+  }
+
+  @include media(tab) {
+    font-size: 1rem;
+  }
+
+  @include media(phone-small) {
+    font-size: 0.8rem;
+  }
 }
 
 .price-icon-check {
@@ -402,6 +705,30 @@ p {
   font-weight: 900;
   line-height: 1.5;
   color: #fff;
+
+  @include media(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include media(tab) {
+    font-size: 2rem;
+  }
+
+  @include media(phone-big) {
+    font-size: 1.9rem;
+  }
+
+  @include media(phone-medium) {
+    font-size: 1.5rem;
+  }
+
+  @include media(phone-small) {
+    font-size: 1.25rem;
+  }
+
+  @include media(big-desktop-4k) {
+    font-size: 4rem;
+  }
 }
 
 .download-button-gplay {
@@ -427,6 +754,16 @@ p {
   color: #ff4c68;
   transition: all 0.3s;
   text-decoration: none;
+
+  @include media(phone-medium) {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @include media(big-desktop-4k) {
+    font-size: 3rem;
+    margin: 20px 20px 3rem;
+  }
 }
 
 .footer-icon:hover {

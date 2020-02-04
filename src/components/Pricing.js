@@ -50,6 +50,11 @@ function Pricing() {
             <div className="card">
               <div className="card-header card-header__labrador">
                 <h3 className="section-header">Labrador</h3>
+                <div className="section-header__recommended">
+                  <h3 className="section-header__recommended-text">
+                    Best Seller<i class="fas fa-crown recommended-icon"></i>
+                  </h3>
+                </div>
               </div>
               <div className="card-body">
                 <h2 className="title-header__card">$49 / mo</h2>

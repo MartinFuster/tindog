@@ -259,23 +259,31 @@ p {
       right: 0;
       border-radius: 5%;
       margin-bottom: -1rem;
-    }
 
-    /*    Recommended (optional) 
-    &__recommended {
-      color: white;
-      background-image: linear-gradient(to right, #ec6f64, #3a1f5d);
-      font-size: 1rem;
-      text-transform: uppercase;
-      padding: 0.2rem 5rem;
-      position: absolute;
-      top: 0;
-      right: 50%;
-      transform: translateX(50%);
-      background-size: cover;
+      &__recommended {
+        color: white;
+        background-image: linear-gradient(to right, #ec6f64, #3a1f5d);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+        padding: 1.5rem 5rem 1.5rem 7rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-size: cover;
+        &-text {
+          font-size: 0.7rem;
+          text-transform: uppercase;
+          position: absolute;
+          top: 0.35rem;
+          right: 0.5rem;
+        }
+      }
     }
-    */
   }
+}
+
+.recommended-icon {
+  margin-left: 0.35rem;
+  color: gold;
 }
 
 .title-header__card {

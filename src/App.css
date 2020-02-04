@@ -1,4 +1,7 @@
 /* HTML */
+* {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "Montserrat";
   text-align: center; }
@@ -27,7 +30,8 @@ p {
 
 /* Container*/
 .container-fluid {
-  padding: 7% 15%; }
+  padding: 7% 15%;
+  scroll-behavior: smooth !important; }
 
 /* Title Section */
 #title {
@@ -88,42 +92,73 @@ p {
   margin-top: 5%; }
 
 /* Title Buttons */
-.btn-secondary {
+.button-secondary,
+.button-secondary:link,
+.button-secondary:visited {
   background-color: #343a40;
+  text-decoration: none;
+  color: white;
   font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: 300;
   margin-right: 10px;
   margin-top: 20px;
   margin-left: 5px;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
   border: none;
-  outline: none !important;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s; }
+  .button-secondary:hover,
+  .button-secondary:link:hover,
+  .button-secondary:visited:hover {
+    background-color: #212529;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px); }
+  .button-secondary:active,
+  .button-secondary:link:active,
+  .button-secondary:visited:active {
+    background-color: #212529;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.4);
+    transform: translateY(-1px); }
+  .button-secondary:focus,
+  .button-secondary:link:focus,
+  .button-secondary:visited:focus {
+    outline: none; }
 
-.btn-secondary:hover {
-  background-color: #212529;
-  transform: translateY(-3px);
-  outline: none; }
-
-.btn-secondary:active {
-  transform: translateY(-1px);
-  outline: none;
-  background-color: #212529; }
-
-.btn-outline-secondary {
+.button-outline-secondary,
+.button-outline-secondary:link,
+.button-outline-secondary:visited {
   font-family: "Montserrat";
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 1.275rem;
+  font-weight: 300;
   color: #f5f5f5;
   border-color: #f8f9fa;
+  border-width: 0.03rem;
+  border-style: solid;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
   margin-top: 20px;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s; }
-
-.btn-outline-secondary:hover {
-  background-color: #f5f5f5;
-  color: #1e2125;
-  transform: translateY(-3px); }
-
-.btn-outline-secondary:active:focus {
-  background-color: #f5f5f5 !important;
-  color: #1e2125 !important;
-  transform: translateY(-1px); }
+  .button-outline-secondary:hover,
+  .button-outline-secondary:link:hover,
+  .button-outline-secondary:visited:hover {
+    background-color: #f5f5f5;
+    color: #1e2125;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px); }
+  .button-outline-secondary:active,
+  .button-outline-secondary:link:active,
+  .button-outline-secondary:visited:active {
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.4);
+    transform: translateY(-1px); }
+  .button-outline-secondary:focus,
+  .button-outline-secondary:link:focus,
+  .button-outline-secondary:visited:focus {
+    outline: none; }
 
 /* Features Section */
 #features {
@@ -187,7 +222,7 @@ p {
     height: 14rem;
     background-size: cover;
     position: relative;
-    border-bottom: none;
+    border: none;
     z-index: 1; }
     .card-header__chihuahua {
       background-image: url(./images/chihuahua.jpg); }
@@ -197,7 +232,7 @@ p {
       background-image: url(./images/mastiff.jpg); }
     .card-header .section-header {
       color: white;
-      background-color: #ff4d69;
+      background-image: linear-gradient(to right, #ff4d69, #ec6f64);
       padding: 0.6rem 1rem;
       position: absolute;
       font-size: 1rem;
@@ -207,9 +242,9 @@ p {
       margin-bottom: -1rem; }
       .card-header .section-header__recommended {
         color: white;
-        background-image: linear-gradient(to right, #ec6f64, #3a1f5d);
+        background-image: linear-gradient(to right, #ff4d69, #3a1f5d);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
-        padding: 1.5rem 5rem 1.5rem 7rem;
+        padding: 1.5rem 5rem 1.5rem 8rem;
         position: absolute;
         top: 0;
         right: 0;
@@ -305,10 +340,13 @@ p {
   padding: 7% 15% 0;
   background-color: #fff; }
 
-.footer-icon {
+.footer-icon,
+.footer-icon:visited,
+.footer-icon:link {
   margin: 20px 10px 3rem;
   color: #ff4c68;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  text-decoration: none; }
 
 .footer-icon:hover {
   color: #e36869;

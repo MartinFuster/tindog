@@ -1,4 +1,6 @@
 import React from "react";
+import ButtonSecondary from "./ButtonSecondary";
+import ButtonOutlineSecondary from "./ButtonOutlineSecondary";
 
 function CTA() {
   return (
@@ -7,15 +9,17 @@ function CTA() {
         <h3 class="call-to-action-header">
           Find the True Love of Your Dog's Life Today.
         </h3>
-        <button type="button" class="btn btn-secondary btn-lg">
-          <i class="fab fa-apple"></i> Download
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-secondary btn-lg  download-button-gplay"
-        >
-          <i class="fab fa-google-play"></i> Download
-        </button>
+
+        <ButtonSecondary
+          href="https://apps.apple.com/app/tinder/id547702041?ign-mpt=uo%3D6"
+          content="Download"
+          icon="fab fa-apple"
+        />
+        <ButtonOutlineSecondary
+          href="https://play.google.com/store/apps/details?id=com.tinder&referrer=utm_source=website&utm_medium=cta&utm_campaign=website_home"
+          content="Download"
+          icon="fab fa-google-play"
+        />
       </div>
     </section>
   );

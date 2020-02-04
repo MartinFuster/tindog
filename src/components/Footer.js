@@ -5,10 +5,30 @@ function Footer() {
 
   return (
     <footer id="footer">
-      <i class="footer-icon fab fa-twitter fa-2x" href="#"></i>
-      <i class="footer-icon fab fa-facebook-f fa-2x" href="#"></i>
-      <i class="footer-icon fab fa-instagram fa-2x" href="#"></i>
-      <i class="footer-icon fas fa-envelope fa-2x" href="#"></i>
+      <a
+        class="footer-icon fab fa-twitter fa-2x"
+        href="https://twitter.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      ></a>
+      <a
+        class="footer-icon fab fa-facebook-f fa-2x"
+        href="https://es-la.facebook.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      ></a>
+      <a
+        class="footer-icon fab fa-instagram fa-2x"
+        href="https://www.instagram.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      ></a>
+      <a
+        class="footer-icon fas fa-envelope fa-2x"
+        href="https://www.google.com/intl/es-419/gmail/about/#"
+        target="_blank"
+        rel="noopener noreferrer"
+      ></a>
       <p>© Copyright {year} tindog</p>
     </footer>
   );

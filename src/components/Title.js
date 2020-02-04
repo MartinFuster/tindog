@@ -1,5 +1,7 @@
 import React from "react";
 import iphone from "../images/iphone6.png";
+import ButtonSecondary from "./ButtonSecondary";
+import ButtonOutlineSecondary from "./ButtonOutlineSecondary";
 
 function Title() {
   return (
@@ -8,12 +10,16 @@ function Title() {
         <h1 className="title-detail title-header">
           Meet new and interesting dogs nearby.
         </h1>
-        <button type="button" className="btn btn-secondary btn-lg">
-          <i className="fab fa-apple"></i> Download
-        </button>
-        <button type="button" className="btn btn-outline-secondary btn-lg">
-          <i className="fab fa-google-play"></i> Download
-        </button>
+        <ButtonSecondary
+          href="https://apps.apple.com/app/tinder/id547702041?ign-mpt=uo%3D6"
+          content="Download"
+          icon="fab fa-apple"
+        />
+        <ButtonOutlineSecondary
+          href="https://play.google.com/store/apps/details?id=com.tinder&referrer=utm_source=website&utm_medium=cta&utm_campaign=website_home"
+          content="Download"
+          icon="fab fa-google-play"
+        />
       </div>
 
       <div className="col-lg-6">

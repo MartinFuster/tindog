@@ -295,7 +295,13 @@ p {
 
       &__recommended {
         color: white;
-        background-image: linear-gradient(to right, #ff4d69, #3a1f5d);
+        background-image: linear-gradient(
+          to right,
+          transparent,
+          #ff4d69,
+          #3a1f5d,
+          transparent
+        );
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
         padding: 1.5rem 5rem 1.5rem 8rem;
         position: absolute;

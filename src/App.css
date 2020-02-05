@@ -317,7 +317,8 @@ p {
   background-image: linear-gradient(to right, #ff4d69, #ec6f64);
   padding-left: 15%;
   padding-right: 15%;
-  padding-bottom: 3%; }
+  padding-bottom: 3%;
+  overflow-x: hidden; }
 
 .press-images {
   width: 25%;

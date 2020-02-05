@@ -3,17 +3,17 @@ import AnkerButton from "./AnkerButton";
 
 function Pricing() {
   return (
-    <section id="pricing">
+    <section id="pricing" data-aos="fade-up">
       <div className="container-fluid">
-        <h2 className="title-header title-header__pricing">
+        <h2 className="title-header title-header__pricing" data-aos="zoom-in">
           A Plan for Every Dog's Needs
         </h2>
         <p className="title-header__paragraph">
           Simple and affordable price plans for your and your dog.
         </p>
 
-        <div className="row">
-          <div className="pricing-card col-lg-4">
+        <div className="row" data-aos="fade-up">
+          <div className="pricing-card col-lg-4" data-aos="zoom-in">
             <div className="card">
               <div className="card-header card-header__chihuahua">
                 <h3 className="section-header">Chihuahua</h3>
@@ -50,7 +50,7 @@ function Pricing() {
             </div>
           </div>
 
-          <div className="pricing-card col-lg-4">
+          <div className="pricing-card col-lg-4" data-aos="zoom-in">
             <div className="card">
               <div className="card-header card-header__labrador">
                 <h3 className="section-header">Labrador</h3>
@@ -92,7 +92,7 @@ function Pricing() {
             </div>
           </div>
 
-          <div className="pricing-card col-lg-4">
+          <div className="pricing-card col-lg-4" data-aos="zoom-in">
             <div className="card">
               <div className="card-header card-header__mastiff">
                 <h3 className="section-header">Mastiff</h3>

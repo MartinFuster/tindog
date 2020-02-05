@@ -1,14 +1,16 @@
 import React from "react";
 import dog from "../images/dog-img.jpg";
 import lady from "../images/lady-img.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Testimonials() {
   return (
-    <section id="testimonials">
+    <section id="testimonials" data-aos="fade-up">
       <div className="carousel slide" data-ride="carousel" id="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active container-fluid">
-            <h2 className="testimonial-text">
+            <h2 className="testimonial-text" data-aos="zoom-in-up">
               I no longer have to sniff other dogs for love. I've found the
               hottest Corgi on TinDog. Woof.
             </h2>
@@ -16,7 +18,7 @@ function Testimonials() {
             <em>Pebbles, New York</em>
           </div>
           <div class="carousel-item container-fluid">
-            <h2 class="testimonial-text">
+            <h2 class="testimonial-text" data-aos="zoom-in-up">
               My dog used to be so lonely, but with TinDog's help, they've found
               the love of their life. I think.
             </h2>

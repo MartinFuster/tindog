@@ -7,8 +7,14 @@ import Press from "./components/Press";
 import Pricing from "./components/Pricing";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  AOS.init({
+    duration: 1000,
+    delay: 250
+  });
   return (
     <div>
       <Header />

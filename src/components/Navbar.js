@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg" data-aos="fade">
       <a className="navbar-brand" href="/">
         <i className="fas fa-fire"></i> tindog
       </a>

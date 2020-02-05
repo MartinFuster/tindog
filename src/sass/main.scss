@@ -305,6 +305,8 @@ p {
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   margin-top: 20px;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
 
   @include media(tab-port) {
     font-size: 1rem;
@@ -321,9 +323,6 @@ p {
   @include media(big-desktop-4k) {
     font-size: 2rem;
   }
-
-  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
-  transition: all 0.3s;
 
   &:hover {
     background-color: #f5f5f5;
@@ -438,6 +437,8 @@ p {
   padding-left: 15%;
   padding-right: 15%;
   padding-bottom: 3%;
+
+  overflow-x: hidden;
 }
 
 .press-images {

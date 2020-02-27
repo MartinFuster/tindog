@@ -1,13 +1,10 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Features from "./components/Features";
-import Testimonials from "./components/Testimonials";
-import Pricing from "./components/Pricing";
-import CTA from "./components/CTA";
-import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 
 function App() {
   AOS.init({
@@ -15,14 +12,12 @@ function App() {
     delay: 250
   });
   return (
-    <div>
-      <Header />
-      <Features />
-      <Testimonials />
-      <Pricing />
-      <CTA />
-      <Footer />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="*" component={NotFound} />
+      </Switch>
+    </Router>
   );
 }
 

@@ -50,7 +50,11 @@ function Pricing() {
             </div>
           </div>
 
-          <div className="pricing-card col-lg-4" data-aos="zoom-in">
+          <div
+            className="pricing-card col-lg-4"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
             <div className="card">
               <div className="card-header card-header__labrador">
                 <h3 className="section-header">Labrador</h3>
@@ -92,7 +96,11 @@ function Pricing() {
             </div>
           </div>
 
-          <div className="pricing-card col-lg-4" data-aos="zoom-in">
+          <div
+            className="pricing-card col-lg-4"
+            data-aos="zoom-in"
+            data-aos-delay="550"
+          >
             <div className="card">
               <div className="card-header card-header__mastiff">
                 <h3 className="section-header">Mastiff</h3>

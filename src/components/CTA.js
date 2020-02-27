@@ -4,9 +4,9 @@ import ButtonOutlineSecondary from "./ButtonOutlineSecondary";
 
 function CTA() {
   return (
-    <section id="cta" data-aos="fade-up">
-      <div class="container-fluid">
-        <h3 class="call-to-action-header" data-aos="zoom-in">
+    <section id="cta" data-aos="fade">
+      <div className="container-fluid">
+        <h3 className="call-to-action-header" data-aos="zoom-in">
           Find the True Love of Your Dog's Life Today.
         </h3>
         <div data-aos="zoom-in">

@@ -11,18 +11,21 @@ function Press() {
         src={bizInsider}
         alt="biz-insider-logo"
         data-aos="fade-right"
+        data-aos-anchor-placement="bottom-bottom"
       />
       <img
         className="press-images"
         src={techCrunch}
         alt="tc-logo"
         data-aos="zoom-in"
+        data-aos-anchor-placement="bottom-bottom"
       />
       <img
         className="press-images"
         src={mashable}
         alt="mashable-logo"
         data-aos="fade-left"
+        data-aos-anchor-placement="bottom-bottom"
       />
     </section>
   );

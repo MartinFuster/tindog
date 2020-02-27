@@ -23,25 +23,25 @@ function Pricing() {
                 <div className="item">
                   <p className="price-item">
                     Pirority Listing{" "}
-                    <i class="fas fa-times price-icon-cross"></i>
+                    <i className="fas fa-times price-icon-cross"></i>
                   </p>
                 </div>
                 <div className="item">
                   <p className="price-item">
                     Unlimited Matches{" "}
-                    <i class="fas fa-times price-icon-cross"></i>
+                    <i className="fas fa-times price-icon-cross"></i>
                   </p>
                 </div>
                 <div className="item">
                   <p className="price-item">
                     Unlimited Messages{" "}
-                    <i class="fas fa-check price-icon-check"></i>
+                    <i className="fas fa-check price-icon-check"></i>
                   </p>
                 </div>
                 <div className="item">
                   <p className="price-item">
                     Unlimited App Usage{" "}
-                    <i class="fas fa-check price-icon-check"></i>
+                    <i className="fas fa-check price-icon-check"></i>
                   </p>
                 </div>
                 <p className="price-item">&nbsp;</p>
@@ -56,7 +56,7 @@ function Pricing() {
                 <h3 className="section-header">Labrador</h3>
                 <div className="section-header__recommended">
                   <h3 className="section-header__recommended-text">
-                    Best Seller<i class="fas fa-crown recommended-icon"></i>
+                    Best Seller<i className="fas fa-crown recommended-icon"></i>
                   </h3>
                 </div>
               </div>
@@ -65,25 +65,25 @@ function Pricing() {
                 <div className="item">
                   <p className="price-item">
                     Pirority Listing{" "}
-                    <i class="fas fa-times price-icon-cross"></i>
+                    <i className="fas fa-times price-icon-cross"></i>
                   </p>
                 </div>
                 <div className="item">
                   <p className="price-item">
                     Unlimited Matches{" "}
-                    <i class="fas fa-check price-icon-check"></i>
+                    <i className="fas fa-check price-icon-check"></i>
                   </p>
                 </div>
                 <div className="item">
                   <p className="price-item">
                     Unlimited Messages{" "}
-                    <i class="fas fa-check price-icon-check"></i>
+                    <i className="fas fa-check price-icon-check"></i>
                   </p>
                 </div>
                 <div className="item">
                   <p className="price-item">
                     Unlimited App Usage{" "}
-                    <i class="fas fa-check price-icon-check"></i>
+                    <i className="fas fa-check price-icon-check"></i>
                   </p>
                 </div>
                 <p>&nbsp;</p>
@@ -102,25 +102,25 @@ function Pricing() {
                 <div className="item">
                   <p className="price-item">
                     Pirority Listing{" "}
-                    <i class="fas fa-check price-icon-check"></i>
+                    <i className="fas fa-check price-icon-check"></i>
                   </p>
                 </div>
                 <div className="item">
                   <p className="price-item">
                     Unlimited Matches{" "}
-                    <i class="fas fa-check price-icon-check"></i>
+                    <i className="fas fa-check price-icon-check"></i>
                   </p>
                 </div>
                 <div className="item">
                   <p className="price-item">
                     Unlimited Messages{" "}
-                    <i class="fas fa-check price-icon-check"></i>
+                    <i className="fas fa-check price-icon-check"></i>
                   </p>
                 </div>
                 <div className="item">
                   <p className="price-item">
                     Unlimited App Usage{" "}
-                    <i class="fas fa-check price-icon-check"></i>
+                    <i className="fas fa-check price-icon-check"></i>
                   </p>
                 </div>
                 <p>&nbsp;</p>

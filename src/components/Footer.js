@@ -4,34 +4,37 @@ function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer id="footer" data-aos="zoom">
+    <footer
+      id="footer"
+      data-aos="zoom"
+      data-aos-anchor-placement="bottom-bottom"
+    >
       <div>
         <a
-          class="footer-icon fab fa-twitter fa-2x"
-          href="https://twitter.com/"
-          target="_blank"
+          href="mailto:martinfuster3@gmail.com"
           rel="noopener noreferrer"
-        ></a>
+          aria-label="email"
+        >
+          <i className="footer-icon far fa-envelope fa-2x"></i>
+        </a>
         <a
-          class="footer-icon fab fa-facebook-f fa-2x"
-          href="https://es-la.facebook.com/"
+          href="https://www.instagram.com/mrtinfuster"
           target="_blank"
           rel="noopener noreferrer"
-        ></a>
+          arialabel="instagram"
+        >
+          <i className="footer-icon fab fa-instagram fa-2x"></i>
+        </a>
         <a
-          class="footer-icon fab fa-instagram fa-2x"
-          href="https://www.instagram.com/"
+          href="https://www.linkedin.com/in/martin-fuster-7b1b381a2/"
           target="_blank"
           rel="noopener noreferrer"
-        ></a>
-        <a
-          class="footer-icon fas fa-envelope fa-2x"
-          href="https://www.google.com/intl/es-419/gmail/about/#"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
+          arialabel="linkedin"
+        >
+          <i className="footer-icon fab fa-linkedin-in fa-2x"></i>
+        </a>
       </div>
-      <p>© Copyright {year} tindog</p>
+      <p>© {year} Martin Fuster</p>
     </footer>
   );
 }
